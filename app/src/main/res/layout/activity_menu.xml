@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleX="1">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/olive_green">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/about_label"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="@+id/about_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/about_btn"
+        app:layout_constraintTop_toTopOf="@+id/about_btn"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <TextView
+        android:id="@+id/search_label"
+        android:layout_width="130dp"
+        android:layout_height="24dp"
+        android:text="New Search"
+        app:layout_constraintBottom_toBottomOf="@+id/search_history_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toEndOf="@+id/search_history_button"
+        app:layout_constraintTop_toTopOf="@+id/search_history_button" />
+
+    <ImageButton
+        android:id="@+id/profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/search_history_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        app:srcCompat="@drawable/generic_person" />
+
+    <ImageButton
+        android:id="@+id/search_history_button"
+        android:layout_width="72dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile_button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429"
+        app:srcCompat="@drawable/search_icon" />
+
+    <TextView
+        android:id="@+id/profile_label"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:text="User Information"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/profile_button"
+        app:layout_constraintTop_toTopOf="@+id/profile_button"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ImageButton
+        android:id="@+id/about_btn"
+
+        android:layout_width="73dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/search_history_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_button"
+        app:layout_constraintTop_toBottomOf="@+id/search_history_button"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/info_about"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/logout_btn"
+        android:layout_width="67dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="88dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logout"
+        app:tint="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

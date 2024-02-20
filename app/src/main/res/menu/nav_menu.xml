@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_acct"
+            android:icon="@drawable/person_logo_for_name"
+            android:title="User Profile"/>
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/image_search"
+            android:title="New Search"/>
+
+        <item
+            android:id="@+id/search_history"
+            android:icon="@drawable/search_history"
+            android:title="Search History"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/info_about"
+            android:title="About"/>
+
+
+    </group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Log Out"/>
+
+        </menu>
+
+    </item>
+
+</menu>

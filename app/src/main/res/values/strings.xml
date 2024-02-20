@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FarmerLens</string>
+    <string name="login">Login</string>
+    <string name="password">password</string>
+    <string name="email">email\n</string>
+    <string name="register">register</string>
+    <string name="Register">Register</string>
+    <string name="user_id">user ID</string>
+    <string name="date_of_birth">Date of birth</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">User Name</string>
+</resources>
